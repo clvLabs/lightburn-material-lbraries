@@ -197,6 +197,26 @@
             </CutSetting>
         </Entry>
     </Material>
+    <Material name="eva-foam">
+        <Entry Thickness="2.0000" Desc="Cut">
+            <CutSetting type="Cut">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="eva-foam/2.0000/Cut"/>
+                <minPower Value="30"/>
+                <maxPower Value="35"/>
+                <maxPower2 Value="20"/>
+                <speed Value="100"/>
+                <kerf Value="0.04"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+    </Material>
     <Material name="leather-dark">
         <Entry Thickness="-1.0000" Desc="Fill">
             <CutSetting type="Scan">
