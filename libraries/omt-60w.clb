@@ -74,11 +74,11 @@
                 <ditherMode Value="stucki"/>
             </CutSetting>
         </Entry>
-        <Entry Thickness="3.0000" Desc="Fill">
+        <Entry Thickness="-1.0000" Desc="Fill">
             <CutSetting type="Scan">
                 <index Value="0"/>
                 <name Value=""/>
-                <LinkPath Value="acrylic-clear/3.0000/Fill"/>
+                <LinkPath Value="acrylic-clear/-1.0000/Fill"/>
                 <minPower Value="35"/>
                 <maxPower Value="35"/>
                 <maxPower2 Value="20"/>
@@ -176,18 +176,17 @@
                 <tabCountMax Value="1"/>
             </CutSetting>
         </Entry>
-        <Entry Thickness="4.0000" Desc="Fill">
-            <CutSetting type="Scan">
+        <Entry Thickness="5.0000" Desc="Cut">
+            <CutSetting type="Cut">
                 <index Value="0"/>
                 <name Value=""/>
-                <LinkPath Value="acrylic-clear/4.0000/Fill"/>
-                <minPower Value="35"/>
-                <maxPower Value="35"/>
+                <LinkPath Value="acrylic-clear/5.0000/Cut"/>
+                <minPower Value="70"/>
+                <maxPower Value="80"/>
                 <maxPower2 Value="20"/>
-                <speed Value="500"/>
+                <speed Value="9"/>
+                <kerf Value="0.04"/>
                 <dotTime Value="1"/>
-                <dotSpacing Value="0.01"/>
-                <overscan Value="0"/>
                 <priority Value="0"/>
                 <manualTabs Value="0"/>
                 <tabCount Value="1"/>
@@ -200,7 +199,7 @@
             <CutSetting type="Cut">
                 <index Value="0"/>
                 <name Value=""/>
-                <LinkPath Value="cardboard-500g/-1.0000/cut"/>
+                <LinkPath Value="cardboard/-1.0000/500g - cut"/>
                 <minPower Value="40"/>
                 <maxPower Value="45"/>
                 <maxPower2 Value="20"/>
@@ -219,7 +218,7 @@
             <CutSetting type="Cut">
                 <index Value="0"/>
                 <name Value=""/>
-                <LinkPath Value="cardboard-500g/-1.0000/line"/>
+                <LinkPath Value="cardboard/-1.0000/500g - line"/>
                 <maxPower Value="20"/>
                 <maxPower2 Value="20"/>
                 <speed Value="200"/>
@@ -227,6 +226,24 @@
                 <numPasses Value="2"/>
                 <dotTime Value="1"/>
                 <dotSpacing Value="0.01"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+        <Entry Thickness="-1.0000" Desc="500g - Fold Line">
+            <CutSetting type="Cut">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="cardboard/-1.0000/500g - Fold Line"/>
+                <minPower Value="10"/>
+                <maxPower Value="20"/>
+                <maxPower2 Value="20"/>
+                <speed Value="150"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <floodFill Value="1"/>
                 <priority Value="0"/>
                 <manualTabs Value="0"/>
                 <tabCount Value="1"/>
@@ -342,13 +359,31 @@
                 <tabCountMax Value="1"/>
             </CutSetting>
         </Entry>
+        <Entry Thickness="-1.0000" Desc="Fill (black)">
+            <CutSetting type="Scan">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="cork/-1.0000/Fill (black)"/>
+                <minPower Value="30"/>
+                <maxPower Value="35"/>
+                <maxPower2 Value="20"/>
+                <speed Value="400"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <overscan Value="0"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
     </Material>
     <Material name="craft-paper">
         <Entry Thickness="-1.0000" Desc="180g - cut">
             <CutSetting type="Cut">
                 <index Value="0"/>
                 <name Value=""/>
-                <LinkPath Value="craft-paper/0.2500/cut"/>
+                <LinkPath Value="craft-paper/-1.0000/180g - cut"/>
                 <maxPower Value="30"/>
                 <maxPower2 Value="20"/>
                 <speed Value="200"/>
@@ -400,7 +435,7 @@
             <CutSetting type="Cut">
                 <index Value="0"/>
                 <name Value=""/>
-                <LinkPath Value="craft-paper/0.4400/cut"/>
+                <LinkPath Value="craft-paper/-1.0000/260g - cut"/>
                 <maxPower Value="35"/>
                 <maxPower2 Value="20"/>
                 <speed Value="150"/>
@@ -413,15 +448,15 @@
                 <tabCountMax Value="1"/>
             </CutSetting>
         </Entry>
-        <Entry Thickness="-1.0000" Desc="Fold Line">
+        <Entry Thickness="-1.0000" Desc="300g - Fold Line">
             <CutSetting type="Cut">
                 <index Value="0"/>
                 <name Value=""/>
-                <LinkPath Value="craft-paper/-1.0000/Fold Line"/>
+                <LinkPath Value="craft-paper/-1.0000/300g - Fold Line"/>
                 <minPower Value="10"/>
                 <maxPower Value="20"/>
                 <maxPower2 Value="20"/>
-                <speed Value="150"/>
+                <speed Value="300"/>
                 <dotTime Value="1"/>
                 <dotSpacing Value="0.01"/>
                 <floodFill Value="1"/>
@@ -438,10 +473,10 @@
                 <index Value="0"/>
                 <name Value=""/>
                 <LinkPath Value="eva-foam/2.0000/Cut"/>
-                <minPower Value="35"/>
-                <maxPower Value="35"/>
+                <minPower Value="40"/>
+                <maxPower Value="40"/>
                 <maxPower2 Value="20"/>
-                <speed Value="100"/>
+                <speed Value="60"/>
                 <kerf Value="0.04"/>
                 <dotTime Value="1"/>
                 <dotSpacing Value="0.01"/>
@@ -626,6 +661,63 @@
             </CutSetting>
         </Entry>
     </Material>
+    <Material name="melamine">
+        <Entry Thickness="-1.0000" Desc="fill">
+            <CutSetting type="Scan">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="melamine/-1.0000/fill"/>
+                <minPower Value="35"/>
+                <maxPower Value="35"/>
+                <maxPower2 Value="20"/>
+                <speed Value="300"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <overscan Value="0"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+        <Entry Thickness="-1.0000" Desc="image">
+            <CutSetting type="Image">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="melamine/-1.0000/image"/>
+                <minPower Value="35"/>
+                <maxPower Value="35"/>
+                <maxPower2 Value="20"/>
+                <speed Value="200"/>
+                <dotTime Value="1"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+                <ditherMode Value="stucki"/>
+            </CutSetting>
+        </Entry>
+    </Material>
+    <Material name="oak-veneer">
+        <Entry Thickness="0.6000" Desc="Cut">
+            <CutSetting type="Cut">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="oak-veneer/0.6000/Cut"/>
+                <minPower Value="40"/>
+                <maxPower Value="55"/>
+                <maxPower2 Value="20"/>
+                <speed Value="100"/>
+                <kerf Value="0.04"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+    </Material>
     <Material name="paper-std">
         <Entry Thickness="-1.0000" Desc="Cut">
             <CutSetting type="Cut">
@@ -643,6 +735,43 @@
                 <manualTabs Value="0"/>
                 <tabCount Value="1"/>
                 <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+    </Material>
+    <Material name="pizarra">
+        <Entry Thickness="-1.0000" Desc="Fill">
+            <CutSetting type="Scan">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="pizarra/-1.0000/Fill"/>
+                <minPower Value="40"/>
+                <maxPower Value="40"/>
+                <maxPower2 Value="20"/>
+                <speed Value="200"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <overscan Value="0"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+        <Entry Thickness="-1.0000" Desc="Image">
+            <CutSetting type="Image">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="pizarra/-1.0000/Image"/>
+                <minPower Value="40"/>
+                <maxPower Value="40"/>
+                <maxPower2 Value="20"/>
+                <speed Value="200"/>
+                <dotTime Value="1"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+                <ditherMode Value="stucki"/>
             </CutSetting>
         </Entry>
     </Material>
@@ -692,7 +821,8 @@
                 <index Value="0"/>
                 <name Value=""/>
                 <LinkPath Value="wood-mdf/3.0000/Cut"/>
-                <maxPower Value="45"/>
+                <minPower Value="30"/>
+                <maxPower Value="55"/>
                 <maxPower2 Value="20"/>
                 <speed Value="20"/>
                 <kerf Value="0.04"/>
@@ -768,7 +898,8 @@
                 <index Value="0"/>
                 <name Value=""/>
                 <LinkPath Value="wood-ply-std/3.0000/Cut"/>
-                <maxPower Value="45"/>
+                <minPower Value="30"/>
+                <maxPower Value="55"/>
                 <maxPower2 Value="20"/>
                 <speed Value="20"/>
                 <kerf Value="0.04"/>
@@ -789,7 +920,6 @@
                 <maxPower Value="20"/>
                 <maxPower2 Value="20"/>
                 <speed Value="300"/>
-                <numPasses Value="2"/>
                 <dotTime Value="1"/>
                 <dotSpacing Value="0.01"/>
                 <floodFill Value="1"/>
@@ -877,6 +1007,78 @@
                 <maxPower Value="40"/>
                 <maxPower2 Value="20"/>
                 <speed Value="500"/>
+                <dotTime Value="1"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+                <ditherMode Value="stucki"/>
+            </CutSetting>
+        </Entry>
+        <Entry Thickness="5.0000" Desc="Cut">
+            <CutSetting type="Cut">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="wood-ply-std/5.0000/Cut"/>
+                <minPower Value="45"/>
+                <maxPower Value="60"/>
+                <maxPower2 Value="20"/>
+                <speed Value="10"/>
+                <kerf Value="0.04"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+        <Entry Thickness="-1.0000" Desc="Veneer engrave">
+            <CutSetting type="Scan">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="wood-ply-std/-1.0000/Veneer engrave"/>
+                <minPower Value="30"/>
+                <maxPower Value="30"/>
+                <maxPower2 Value="20"/>
+                <speed Value="150"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <overscan Value="0"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+    </Material>
+    <Material name="wood-ply-veneer">
+        <Entry Thickness="3.4000" Desc="Cut">
+            <CutSetting type="Cut">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="wood-ply-veneer/3.4000/Cut"/>
+                <minPower Value="45"/>
+                <maxPower Value="60"/>
+                <maxPower2 Value="20"/>
+                <speed Value="15"/>
+                <kerf Value="0.04"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+        <Entry Thickness="-1.0000" Desc="Image">
+            <CutSetting type="Image">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="wood-ply-veneer/-1.0000/Image"/>
+                <maxPower Value="20"/>
+                <maxPower2 Value="20"/>
+                <speed Value="125"/>
                 <dotTime Value="1"/>
                 <priority Value="0"/>
                 <manualTabs Value="0"/>
