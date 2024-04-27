@@ -1090,6 +1090,24 @@
                 <tabCountMax Value="1"/>
             </CutSetting>
         </Entry>
+        <Entry Thickness="-1.0000" Desc="Fill (hard)">
+            <CutSetting type="Scan">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="wood-ply-std/-1.0000/Fill (hard)"/>
+                <minPower Value="40"/>
+                <maxPower Value="40"/>
+                <maxPower2 Value="20"/>
+                <speed Value="100"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <overscan Value="0"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
     </Material>
     <Material name="wood-ply-veneer">
         <Entry Thickness="3.4000" Desc="Cut">
