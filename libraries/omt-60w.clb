@@ -223,7 +223,7 @@
                 <minPower Value="70"/>
                 <maxPower Value="80"/>
                 <maxPower2 Value="20"/>
-                <speed Value="9"/>
+                <speed Value="5"/>
                 <kerf Value="0.04"/>
                 <dotTime Value="1"/>
                 <priority Value="0"/>
