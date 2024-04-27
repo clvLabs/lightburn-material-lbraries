@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LightBurnLibrary>
+    <Material name="Graflux bicolor">
+        <Entry Thickness="1.6500" Desc="Cut">
+            <CutSetting type="Cut">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="Graflux bicolor/1.6500/Cut"/>
+                <minPower Value="60"/>
+                <maxPower Value="60"/>
+                <maxPower2 Value="20"/>
+                <speed Value="30"/>
+                <kerf Value="0.04"/>
+                <numPasses Value="2"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+        <Entry Thickness="-1.0000" Desc="Fill">
+            <CutSetting type="Scan">
+                <index Value="0"/>
+                <name Value=""/>
+                <LinkPath Value="Graflux bicolor/-1.0000/Fill"/>
+                <minPower Value="40"/>
+                <maxPower Value="50"/>
+                <maxPower2 Value="20"/>
+                <speed Value="300"/>
+                <dotTime Value="1"/>
+                <dotSpacing Value="0.01"/>
+                <overscan Value="0"/>
+                <priority Value="0"/>
+                <manualTabs Value="0"/>
+                <tabCount Value="1"/>
+                <tabCountMax Value="1"/>
+            </CutSetting>
+        </Entry>
+    </Material>
     <Material name="acrylic-clear">
         <Entry Thickness="1.0000" Desc="Fill">
             <CutSetting type="Scan">
